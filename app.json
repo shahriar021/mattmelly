@@ -1,0 +1,89 @@
+{
+  "expo": {
+    "name": "MattMelly",
+    "slug": "MattMelly",
+    "version": "1.2.34",
+    "icon": "./assets/adaptive-icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/adaptive-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.smartsoftware.sas"
+    },
+    "android": {
+      "versionCode": 139,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "supportsScreens": {
+        "smallScreens": true,
+        "normalScreens": true,
+        "largeScreens": true,
+        "xlargeScreens": true,
+        "resizeable": true,
+        "anyDensity": true
+      },
+      "hardwareBackButton": true,
+      "resizeMode": "contain",
+      "tabletLandscape": true,
+      "tabletPortrait": true,
+      "useNextNotificationsApi": true,
+      "package": "com.smartsoftware.sas",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC4fsrgciACjhUacg9umvRHflrJJHFovdY"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Smart dormitory to use your location."
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "1.9.24",
+            "composeCompilerVersion": "1.5.14"
+          }
+        }
+      ],
+      "expo-localization"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b1f03189-b183-4732-9116-2693de630be0"
+      }
+    },
+    "owner": "shahriar021"
+  }
+}
